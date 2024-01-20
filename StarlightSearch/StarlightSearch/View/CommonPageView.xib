@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonPageView" customModule="StarlightSearch" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="q2F-45-ipo" id="oky-EA-NA3"/>
+                <outlet property="titleLabel" destination="E7c-WF-g9s" id="lpv-Q4-Q3l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-VH-X0D" userLabel="탑메뉴">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsd-bM-uuG">
+                            <rect key="frame" x="18" y="10.5" width="29.5" height="29.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Fsd-bM-uuG" secondAttribute="height" multiplier="1:1" id="rCW-17-Yz8"/>
+                            </constraints>
+                            <state key="normal" image="btn_back"/>
+                            <connections>
+                                <action selector="onClickBackButton:" destination="-1" eventType="touchUpInside" id="rBJ-J8-iQO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7c-WF-g9s">
+                            <rect key="frame" x="387.5" y="13" width="8.5" height="24"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.08235294118" green="0.65098039220000004" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Fsd-bM-uuG" firstAttribute="centerY" secondItem="fBM-VH-X0D" secondAttribute="centerY" id="0ha-Ln-Ht7"/>
+                        <constraint firstItem="E7c-WF-g9s" firstAttribute="centerY" secondItem="fBM-VH-X0D" secondAttribute="centerY" id="3Mw-8S-Wjv"/>
+                        <constraint firstAttribute="trailing" secondItem="E7c-WF-g9s" secondAttribute="trailing" constant="18" id="5Rp-jO-Xgq"/>
+                        <constraint firstAttribute="height" constant="50" id="Nc5-dl-unQ"/>
+                        <constraint firstItem="Fsd-bM-uuG" firstAttribute="leading" secondItem="fBM-VH-X0D" secondAttribute="leading" constant="18" id="lWO-Hi-kMX"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-45-ipo">
+                    <rect key="frame" x="15" y="94" width="384" height="768"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q2F-45-ipo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0ZT-pz-EwI"/>
+                <constraint firstItem="q2F-45-ipo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-30" id="0dX-RY-Rng"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q2F-45-ipo" secondAttribute="bottom" id="6Dh-6B-WB2"/>
+                <constraint firstItem="fBM-VH-X0D" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SNv-fp-alK"/>
+                <constraint firstItem="fBM-VH-X0D" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="cb4-ck-235"/>
+                <constraint firstItem="q2F-45-ipo" firstAttribute="top" secondItem="fBM-VH-X0D" secondAttribute="bottom" id="lnm-NC-iBB"/>
+                <constraint firstItem="fBM-VH-X0D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ruh-J4-wP6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="87"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="29.5" height="29.5"/>
+    </resources>
+</document>
